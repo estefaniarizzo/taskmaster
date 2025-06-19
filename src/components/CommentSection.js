@@ -8,7 +8,7 @@ const CommentSection = ({ comments: initialComments, onAddComment }) => {
     if (newCommentText.trim()) {
       const newCommentObj = {
         text: newCommentText.trim(),
-        author: 'Usuario Actual', // Esto debería venir del contexto de autenticación
+        author: 'Usuario Actual', 
         date: new Date().toISOString().slice(0, 10),
       };
       setCurrentComments([...currentComments, newCommentObj]);
